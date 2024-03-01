@@ -3,6 +3,6 @@ COPY . .
 RUN mvn clean package -DskipTests
 
 FROM openjdk:17-jdk-slim
-COPY --from=build /target/usercrud-0.0.1-SNAPSHOT.jar usercrud.jar
+COPY --from=build /target/usercrud-0.0.1-SNAPSHOT.war usercrud.war
 EXPOSE 9002
-ENTRYPOINT ["java", "-jar", "usercrud.jar"]
+ENTRYPOINT ["java", "-jar", "usercrud.war"]
