@@ -20,19 +20,27 @@
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link href="../../static/css/main.css" rel="stylesheet">
+
     <script type="text/javascript" src="../../static/javascript/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 </head>
 
 <body>
 <div class="container my-5">
-    <h3>Sign Up</h3>
+    <h3>Update </h3>
+    <jsp:include page="navbar.jsp"/>
+
     <div class="card">
         <div class="card-body">
             <div class="col-md-10">
+
+                    <%--@elvariable id="user" type="user"--%>
                     <form:form action="/saveOrUpdate"
                                method="post" modelAttribute="user">
-                        <form:hidden path="id" />
+                        <form:hidden path="id" id="id"/>
                     <div class="row">
                         <div class="form-group col-md-8">
                             <label for="nickname" class="col-form-label">Nickname</label>
@@ -67,6 +75,9 @@
             </div>
         </div>
     </div>
+</div>
+<div>
+    <jsp:include page="footer.jsp"/>
 </div>
 </body>
 </html>

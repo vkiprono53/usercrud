@@ -39,7 +39,7 @@ public class UserController {
 
     @GetMapping("/userUpdate/{id}")
     public ModelAndView getUser(@PathVariable("id") Long id) {
-        ModelAndView modelAndView = new ModelAndView("addUser");
+        ModelAndView modelAndView = new ModelAndView("updatePage");
         User user = userServiceI.findById(id);
         modelAndView.addObject("user", user);
         return modelAndView;
