@@ -65,8 +65,8 @@
     </li>
 
     <button >
-      <a href="/addUser" class="btn  btn-primary">
-        <i class="fas fa-user-plus ml-2">&#44160;&#49324;&#49884;&#51089;</i>
+      <a href="#" class="btn  btn-primary">
+        <i class="fas fa-user-plus ml-2">&#xac80;&#xc0ac;&#xc2dc;&#xc791;</i>
       </a>
     </button>
 

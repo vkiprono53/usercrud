@@ -268,9 +268,16 @@
                                                     path="password" placeholder="******" />
                                     </div>
 
-                                    <div class="col-md-6">
-                                        <input type="submit" class="btn btn-primary" value="LOGIN">
+                                    <div class="form-group col-md-8">
+                                        <input type="submit" class="btn btn-primary" value="&#xb85c;&#xadf8;&#xc778;">
                                     </div>
+
+                                    <div class="form-group col-md-8">
+                                        <a href="/addUser" class="btn  btn-default">
+                                            <i class="fas ml-2">&#xd68c;&#xc6d0;&#xac00;&#xc785;</i>
+                                        </a>
+                                    </div>
+
 
                                 </div>
                             </form:form>

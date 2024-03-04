@@ -25,8 +25,6 @@ function loadLoginModal(){
 }
 
 function checkPhone(){
-    var phoneButton = $('#checkPhoneButton');
-    alert("hello1");
     var phoneNumber = $("#phoneNumber").val();
     $(document).ready(function() {
         alert("PhoneNUmber::::" + phoneNumber);
@@ -35,8 +33,7 @@ function checkPhone(){
             url: "/checkPhone",
             data: {phoneNumber: phoneNumber},
             success: function (data) {
-                alert("Data" + data);
-                console.log("DATAAA" + data);
+                console.log("DATA" + data);
                 if (data != null){
                     $('.phoneNumber').attr("value", '');
                 }
@@ -46,25 +43,7 @@ function checkPhone(){
     });
         return true;
 }
-function checkPhone1(){
-    alert("check phone");
-    var phoneNumber = $("#phoneNumber").val();
-    alert("phoneNumber" + phoneNumber);
 
-    $(document).ready(function () {
-
-        $("#userForm").submit(function (event) {
-
-            //stop submit the form, we will post it manually.
-            event.preventDefault();
-
-            checkPhoneSubmit();
-
-        });
-
-    });
-
-}
 
 function checkPhoneSubmit() {
 
